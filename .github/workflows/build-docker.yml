@@ -3,16 +3,16 @@ name: Create and publish multi-arch Docker images
 on:
   push:
     branches:
-      - 'main'
-      - 'fix/**'
-      - 'dev'
-      - 'test-**'
+      - "main"
+      - "fix/**"
+      - "dev"
+      - "test-**"
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
 env:
   REGISTRY: ghcr.io
-  IMAGE_BACKEND: ticketz-oss/ticketz-backend
-  IMAGE_FRONTEND: ticketz-oss/ticketz-frontend
+  IMAGE_BACKEND: EdMaxi/ticketz-backend
+  IMAGE_FRONTEND: EdMaxi/ticketz-frontend
 
 jobs:
   build-and-push-images:
